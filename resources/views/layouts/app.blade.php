@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
+  <meta name="author" content="Creative Tim">
+  <title>MultiLogika</title>
+  <!-- Favicon -->
+  <link rel="icon" href="{{asset('assets/img/brand/favicon.png')}}" type="image/png">
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+  <!-- Icons -->
+  <link rel="stylesheet" href="{{asset('assets/vendor/nucleo/css/nucleo.css')}}" type="text/css">
+  <link rel="stylesheet" href="{{asset('assets/vendor/@fortawesome/fontawesome-free/css/all.min.css')}}" type="text/css">
+  <!-- Argon CSS -->
+  <link rel="stylesheet" href="{{asset('assets/css/argon.css?v=1.2.0')}}" type="text/css">
+</head>
+
+<body>
+  <div id="app">
+
+	<body>
+    @yield('content')
+    </div>
+    </div>
+    <script src="{{asset('assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js')}}"></script>
+    <script src="{{asset('assets/js/bootstrap.bundle.min.js')}}"></script>
+
+    <script src="{{asset('assets/vendors/apexcharts/apexcharts.js')}}"></script>
+    <script src="{{asset('assets/js/pages/dashboard.js')}}"></script>
+
+    <script src="{{asset('assets/js/pages/horizontal-layout.js')}}"></script>
+    <script src="{{asset('assets/vendors/simple-datatables/simple-datatables.js')}}"></script>
+    <script>
+        // Simple Datatable
+        let table1 = document.querySelector('#table1');
+        let dataTable = new simpleDatatables.DataTable(table1);
+    </script>
+
+    <script src="{{asset('assets/js/main.js')}}"></script>
+</body>
+
+</html>
